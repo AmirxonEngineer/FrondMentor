@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+.body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: hsl(210,46%,95%);
+  font-size: 13px;
+  overflow: hidden;
+  line-height: 22px;
+  height: 100vh;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-template-areas: 
+  ' daniel daniel jonat kira'
+    ' jean pat pat kira';
+  column-gap: 5%;
+  padding: 2%;
+}
+
+.daniel{
+  grid-area: daniel;
+  background-color: hsl(263, 55%, 52%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.jonat {
+  grid-area: jonat;
+  background-color: hsl(217, 19%, 35%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.kira {
+  grid-area: kira;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.jean {
+  grid-area: jean;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.pat {
+  grid-area: pat;
+  background-color: hsl(219, 29%, 14%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 15px;
+}
+
+.textmonies-grid p{
+  opacity: 70%;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 5%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+span {
+  opacity: 50%;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      padding: 5%;
+      overflow: auto;
+  }
+
+  .container {
+      padding: 0 3%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .textmonies-grid {
+      margin: 5% 0;
+  }
+}
